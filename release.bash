@@ -124,8 +124,6 @@ if [ -z "$dryRun" ]; then
    git tag -a $nextVersion -m "Criação da tag $nextVersion"
    git push origin $nextVersion
 else
-   echo "Simulação de escrita em $versionFile com o valor da tag $nextVersion"
-   echo "Simulação de add/commit de $versionFile e git push"
    echo "Simulação de criação da tag de $nextVersion (git tag) e push"
    echo "Dry run: nada a fazer..."
 fi
