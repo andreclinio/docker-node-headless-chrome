@@ -1,1 +1,26 @@
-# Node e Chrome
+# Node e Chrome Image
+
+## Desenvolvimento
+
+Principais procedimentos e comandos.
+
+### Criando uma tag de versão
+
+Usar script `release.bash` (ver help --h)
+
+```bash
+$ ./release.bash
+...
+```
+
+### Testando uma versão local (aṕos `./build-local.bash`)
+
+Rodando a imagem local como bash para ver versão do Chrome
+
+```bash
+$ docker run -it --rm docker-node-headless-chrome:x.x.x bash
+...
+
+# google-chrome --version
+Google Chrome 135.0.7049.52
+```
